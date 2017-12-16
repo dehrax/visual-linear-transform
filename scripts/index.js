@@ -25,6 +25,8 @@ zEl.oninput = matrixUpdate;
 matrixUpdate();
 
 function matrixUpdate(e){
+//Write more generalized version, which updates a CSS class instead
+let transformEl = document.querySelectorAll('.transformEl');
 
 let matrixString = [];
 
@@ -32,6 +34,9 @@ matrixInput.forEach((input, i) => {
 	matrixString[i] = input.value;
 });
 //*-1 for the "wrong" kind of coordinate system
-object.setAttribute('style', `transform:matrix(${matrixString[0]},${matrixString[1]*-1},${matrixString[2]},${matrixString[3]},0,0)`);
-  
+console.log(transformEl);
+document.querySelector('style').innerHTML=`.transformEl{
+	transform:matrix(${matrixString[0]},${matrixString[1]*-1},${matrixString[2]},${matrixString[3]},0,0);
+}
+`;
 }
