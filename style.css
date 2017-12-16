@@ -28,16 +28,37 @@ body{
 	opacity: 0.2;
 }
 
-#inputs{
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-}
-
 .transformEl{
 	transform-origin: 50 50;
 	transition: transform 0.2s ease;
+}
+
+
+/***INPUTS POSITIONING AND MATRIX BRACKETS***/
+#inputs{
+	position: fixed;
+	bottom: 10px;
+	z-index: 1;
+	display: inline-block;
+}
+
+#inputs:before, #inputs:after{
+	top: 0;
+	position: absolute;
+	content:'';
+	display: block;
+	border: 5px solid white;
+	height: 90%;
+	width: 20px;
+}
+
+#inputs:after{
+	right: 10px;
+	border-left: none;
+}
+
+#inputs:before{
+	border-right: none;
 }
 
 
@@ -52,5 +73,5 @@ input{
 }
 
 label, input{
-	color: #DDD;
+	color: white;
 }
