@@ -33,6 +33,18 @@ body{
 	transition: transform 0.2s ease;
 }
 
+#origin{
+	width: 14pt;
+	height: 14pt;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	margin-left: -7pt;
+	margin-top: -7pt;
+	background-color: black;
+	position: fixed;
+}
+
 
 /***INPUTS POSITIONING AND MATRIX BRACKETS***/
 #inputs{
