@@ -1,10 +1,11 @@
 # visual-linear-transform
-A repo for visualizing linear transforms. Meant to illustrate what a transform actually is/does.
+A repo for visualizing linear transforms. Meant to illustrate what a transform actually is/does, to give a much more intuitive understanding.
 
-Should probably do something like 3Blue1Brown on YouTube.
+Inspired by [3Blue1Brown's video on YouTube](https://www.youtube.com/watch?v=kYB8IZa5AuE).
 
 ## TODO
 
-- [ ] Visualize how the entire coordinate system shifts
+- [X] Visualize how the entire coordinate system shifts
+- [ ] Add basis vectors
 - [ ] Buy chocolate
 - [ ] Study
