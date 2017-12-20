@@ -34,9 +34,9 @@ matrixInput.forEach((input, i) => {
 	matrixString[i] = input.value;
 });
 //*-1 for the "wrong" kind of coordinate system
-console.log(transformEl);
+
 document.querySelector('style').innerHTML=`.transformEl{
-	transform:matrix(${matrixString[0]},${matrixString[1]*-1},${matrixString[2]},${matrixString[3]},0,0);
+	transform:matrix(${matrixString[0]},${matrixString[2]*-1},${matrixString[1]*-1},${matrixString[3]},0,0);
 }
 `;
 }
